@@ -14,11 +14,11 @@ Automated bank reconciliation template built with **Power Query** in Excel. Past
 
 | Sheet | Purpose |
 |-------|---------|
-| Bank Statement | RAW input — paste bank export here |
+| Bank statement | RAW input — paste bank export here |
 | GL — Acc. 572 | RAW input — paste ledger export here |
 | Bank_reconciliation | Full outer join — all transactions |
-| Entries in Bank NOT in GL | Items to post in accounting |
-| Entries in GL NOT in Bank | Items to investigate |
+| Entries in bank NOT in GL | Items to post in accounting |
+| Entries in GL NOT in bank | Items to investigate |
 
 ## Power Query transformations applied
 
