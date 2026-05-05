@@ -10,8 +10,6 @@ Automated bank reconciliation template built with **Power Query** in Excel. Past
 - Flags unmatched entries from both sides.
 - Refreshes monthly with one click.
 
-![Bank Reconciliation Demo](assets/bank-reconciliation-demo.mp4)
-
 ## Sheets
 
 | Sheet | Purpose |
