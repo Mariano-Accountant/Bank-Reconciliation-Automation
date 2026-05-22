@@ -1,4 +1,4 @@
-# Bank reconciliation automation
+# Overview
 
 Automated bank reconciliation workflow built with Power Query in Excel 365.
 
