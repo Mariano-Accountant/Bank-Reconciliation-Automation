@@ -1,14 +1,17 @@
 # Bank reconciliation automation
 
-Automated bank reconciliation template built with **Power Query** in Excel. Paste raw data, hit refresh, and get matched/unmatched transactions instantly.
+Automated bank reconciliation template built with Power Query in Excel.
 
-## What it does
+Paste raw data, refresh all queries, and instantly identify matched and unmatched transactions.
 
-- Loads raw bank statement and General Ledger exports.
-- Cleans dirty data automatically (metadata rows, trailing spaces, date formats).
-- Matches transactions by date + amount.
-- Flags unmatched entries from both sides.
-- Refreshes monthly with one click.
+## Features
+
+- Automated data cleaning
+- Debit/credit normalization
+- Date format standardization
+- Full outer joins and anti-joins
+- Exception reporting for unmatched entries
+- Refresh-based monthly workflow
 
 ## Sheets
 
@@ -20,27 +23,28 @@ Automated bank reconciliation template built with **Power Query** in Excel. Past
 | Entries in bank NOT in GL | Items to post in accounting |
 | Entries in GL NOT in bank | Items to investigate |
 
-## Power Query transformations applied
+## Power Query transformations
 
-- Remove metadata rows.
-- Trim and clean text columns.
-- Convert date formats (DD/MM/YYYY vs YYYY-MM-DD).
-- Combine debit/credit into signed amount.
-- Filter out summary rows (closing balance).
-- Merge queries (full outer join on date + amount).
-- Anti-joins for unmatched items.
+- Remove metadata rows
+- Trim and clean text fields
+- Standardize date formats
+- Convert debit/credit into signed amounts
+- Filter summary rows
+- Merge queries using date + amount logic
+- Generate anti-join exception reports
 
-## Tools
+## Tech stack
 
-Excel 365 · Power Query.
+Excel 365 · Power Query
 
-## How to use monthly
+## Monthly workflow
 
-1. Paste new bank statement in the bank statement sheet.
-2. Paste new GL export in the GL sheet.
-3. Data → refresh all.
-4. Review unmatched items.
-5. Post adjustments → refresh again.
+- Paste the latest bank statement export
+- Paste the latest GL export
+- Refresh all queries
+- Review unmatched transactions
+- Post adjustments if needed
+- Refresh again
 
 ## Author
 
