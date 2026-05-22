@@ -1,17 +1,16 @@
 # Bank reconciliation automation
 
-Automated bank reconciliation template built with Power Query in Excel.
+Automated bank reconciliation workflow built with Power Query in Excel 365.
 
-Paste raw data, refresh all queries, and instantly identify matched and unmatched transactions.
+Cleans raw bank and GL data, standardizes transaction formats, and automatically identifies matched and unmatched entries using date and amount logic.
 
 ## Features
 
-- Automated data cleaning
-- Debit/credit normalization
-- Date format standardization
-- Full outer joins and anti-joins
-- Exception reporting for unmatched entries
-- Refresh-based monthly workflow
+- Automated data cleaning and standardization
+- Debit/credit normalization into single signed amount
+- Full outer joins and anti-join logic
+- Refresh-based reconciliation workflow
+- Exception reporting for unmatched transactions
 
 ## Sheets
 
@@ -23,28 +22,13 @@ Paste raw data, refresh all queries, and instantly identify matched and unmatche
 | Entries in bank NOT in GL | Items to post in accounting |
 | Entries in GL NOT in bank | Items to investigate |
 
-## Power Query transformations
-
-- Remove metadata rows
-- Trim and clean text fields
-- Standardize date formats
-- Convert debit/credit into signed amounts
-- Filter summary rows
-- Merge queries using date + amount logic
-- Generate anti-join exception reports
-
 ## Tech stack
 
 Excel 365 · Power Query
 
-## Monthly workflow
+## Result
 
-- Paste the latest bank statement export
-- Paste the latest GL export
-- Refresh all queries
-- Review unmatched transactions
-- Post adjustments if needed
-- Refresh again
+Reduced manual reconciliation time from hours to a fast refresh-driven process
 
 ## Author
 
