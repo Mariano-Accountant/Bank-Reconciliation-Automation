@@ -28,7 +28,7 @@ Excel 365 · Power Query
 
 ## Result
 
-Reduced manual reconciliation time from hours to a fast refresh-driven process
+Reduced manual reconciliation time from several hours to a fast refresh-driven process under 10 minutes.
 
 ## Author
 
